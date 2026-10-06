@@ -1,0 +1,330 @@
+.dashboard {
+  padding: 25px 40px;
+  background-color: #121212;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-main {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* مسافة واضحة ومنظمة بين كل قسم والثاني عشان تمنع أي تداخل أو شكل غريب */
+}
+
+.dashboard-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-course-btn {
+  background-color: #22c55e !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dashboard table {
+  width: 100%;
+  background-color: #1a1a1a !important;
+  border-radius: 14px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+}
+
+.dashboard th {
+  background-color: #1f2937 !important;
+  color: #ffffff !important;
+  padding: 14px;
+  text-align: left;
+}
+
+.dashboard td {
+  padding: 13px;
+  border-bottom: 1px solid #2d2d2d;
+  color: #e5e7eb !important;
+}
+
+.empty-table-cell {
+  text-align: center;
+  padding: 20px;
+  color: #9ca3af !important;
+}
+
+/* أزرار التعديل والحذف */
+.delete-btn {
+  background-color: #ef4444 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.update-btn {
+  background-color: #eab308 !important;
+  color: #000000 !important;
+  margin-right: 6px;
+  border: none !important;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* قسم الحجوزات المحدث ومنظم تماماً */
+.bookings-section {
+  margin-top: 10px;
+  background-color: #171717;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #262626;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.bookings-title {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  color: #ffffff !important;
+  font-size: 20px;
+}
+
+.empty-bookings-text {
+  color: #9ca3af !important;
+  margin: 0;
+}
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* الكارت الأساسي */
+.booking-card {
+  background: #1e1e1e !important;
+  padding: 20px !important;
+  border-radius: 12px !important;
+  border: 1.5px solid #333 !important;
+  color: #fff !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-height: 250px !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.booking-card-title {
+  margin: 0 0 10px 0 !important;
+  color: #4ade80 !important;
+  font-size: 18px !important;
+  border-bottom: 1px solid #333 !important;
+  padding-bottom: 8px !important;
+  width: 100% !important;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  word-break: break-word;
+}
+
+.booking-info-row {
+  margin: 4px 0 !important;
+  font-size: 14px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  word-break: break-word;
+  gap: 10px;
+  color: #e5e7eb !important;
+}
+
+.booking-date-row {
+  font-size: 12px !important;
+  color: #aaa !important;
+  border-top: 1px dashed #333 !important;
+  padding-top: 10px !important;
+  margin-top: auto !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  word-break: break-word;
+}
+
+/* === التنسيق الجديد الخاص بقسم طلبات الكورسات (Student Course Requests) === */
+.bookings-section .clear-requests-btn {
+  background-color: #ef4444 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.bookings-section .clear-requests-btn:hover {
+  background-color: #dc2626 !important;
+}
+
+/* كارت خاص بطلبات الكورسات يكون أصغر وأنيق */
+.request-card {
+  background: #1e1e1e !important;
+  padding: 20px !important;
+  border-radius: 12px !important;
+  border: 1.5px solid #333 !important;
+  color: #fff !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-height: 150px !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.request-card-title {
+  margin: 0 0 10px 0 !important;
+  color: #60a5fa !important; /* لون لبني مميز يفرق عن الحجوزات الخضراء */
+  font-size: 18px !important;
+  border-bottom: 1px solid #333 !important;
+  padding-bottom: 8px !important;
+  width: 100% !important;
+  word-break: break-word;
+}
+
+/* تنسيق نافذة التعديل المنبثقة (Modal) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background-color: #1a1a1a !important;
+  padding: 25px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #333;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+/* هيدر المودال المنظم */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.modal-header h3 {
+  margin: 0 !important;
+  color: #ffffff !important;
+  font-size: 20px;
+}
+
+.modal-close-x-btn {
+  background: transparent !important;
+  border: none !important;
+  font-size: 20px;
+  cursor: pointer;
+  color: #9ca3af !important;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.modal-close-x-btn:hover {
+  color: #ffffff !important;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 13px;
+  color: #ccc !important;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+  width: 100%;
+  padding: 9px;
+  border-radius: 6px;
+  border: 1px solid #444 !important;
+  background-color: #262626 !important;
+  color: #ffffff !important;
+  box-sizing: border-box;
+}
+
+.modal-content textarea {
+  resize: vertical;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.modal-cancel-dir-btn,
+.modal-cancel-btn {
+  background-color: #4b5563 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-save-btn {
+  background-color: #2563eb !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}

@@ -1,0 +1,137 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "email": "admin@skill.com",
+      "password": "123",
+      "name": "Admin"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "email": "user@skill.com",
+      "password": "123",
+      "name": "Ahmed"
+    }
+  ],
+  "cat": [
+    {
+      "id": "1",
+      "name": "Men"
+    },
+    {
+      "id": "2",
+      "name": "Women"
+    },
+    {
+      "id": "3",
+      "name": "Kids"
+    }
+  ],
+  "subcat": [
+    {
+      "title": "English Conversation Masterclass couurse",
+      "instructor": "mohamed",
+      "price": 1000,
+      "duration": "50h",
+      "image": "https://tse1.mm.bing.net/th/id/OIP.vCIasm56MHdEdyeJw2b_kQHaGB?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "catId": 3,
+      "description": "Speak English fluently and confidently in your daily life.",
+      "id": "eng-woman-1"
+    },
+    {
+      "id": "eng-child-1",
+      "title": "Fun English For Kids",
+      "price": "350",
+      "catId": 3,
+      "instructor": "Nour",
+      "duration": "15h",
+      "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600",
+      "details": "Learn English letters and basic words through fun games."
+    },
+    {
+      "title": "python",
+      "instructor": "hassan",
+      "price": 255,
+      "duration": "50h",
+      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600",
+      "catId": 2,
+      "description": "Master professional Python for the workplace and interviews",
+      "id": "fPfSAokrmds"
+    },
+    {
+      "title": "flutter&dart",
+      "instructor": "osama",
+      "price": 2000,
+      "duration": "30h",
+      "image": "https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600",
+      "catId": 1,
+      "description": "",
+      "id": "t6f8ovNFbPk"
+    },
+    {
+      "title": "backend",
+      "price": 3000,
+      "catId": 1,
+      "instructor": "mohamed",
+      "duration": "30h",
+      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600",
+      "details": "Professional Backend Development Course",
+      "id": "pz3VE_5TtBE"
+    },
+    {
+      "title": "machine learning",
+      "price": 5000,
+      "catId": 1,
+      "instructor": "osama elzero",
+      "duration": "20h",
+      "image": "https://www.it-daily.net/wp-content/uploads/2023/03/Machine-Learning-730498120-1920.jpg",
+      "details": "JFrog und Qwak: sichere Workflows für Machine-Learning-Operations (MLOps)",
+      "id": "aRW-9yQUXgw"
+    },
+    {
+      "title": "artcial illitgance",
+      "price": 2000,
+      "catId": 1,
+      "instructor": "hassan",
+      "duration": "50h",
+      "image": "https://tse3.mm.bing.net/th/id/OIP.xYd_ncMBo6U67fOd10NluwHaEO?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "details": "How OpenAI API Integration Services Drive AI Implementation Across Industries",
+      "id": "Qt2lLchKhm8"
+    },
+    {
+      "title": "software engineering",
+      "price": 4000,
+      "catId": 1,
+      "instructor": "hassan",
+      "duration": "50h",
+      "image": "https://tse1.mm.bing.net/th/id/OIP._2bzKozpuD0YQkkoXXdMAwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "details": "Never lose momentum or context. Turn complex roadmaps into clear plans to execute faster — keeping the strategic big picture in mind.",
+      "id": "IcogfhHKHP8"
+    }
+  ],
+  "bookings": [
+    {
+      "courseId": "IcogfhHKHP8",
+      "title": "software engineering",
+      "price": 4000,
+      "image": "https://tse1.mm.bing.net/th/id/OIP._2bzKozpuD0YQkkoXXdMAwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "instructor": "hassan",
+      "date": "23/09/2026, 12:09 am",
+      "userEmail": "hassanelnezamy14@gmail.com",
+      "userName": "Hassanelnezamy14",
+      "id": "SaIZQ_bjf6c"
+    }
+  ],
+  "requests": [
+    {
+      "course": "graphic design",
+      "date": "23/09/2026, 00:09:47",
+      "userEmail": "hassanelnezamy14@gmail.com",
+      "userName": "Hassanelnezamy14",
+      "id": "LBuo0fHXUW8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

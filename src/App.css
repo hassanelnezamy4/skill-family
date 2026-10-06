@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+:root {
+  --main: #4ade80;
+  --dark: #121212;
+  --light: #f9fafb;
+  --gray: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: #fff;
+  direction: ltr;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Responsive Grid System */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+/* Media Queries for Mobile/Tablet */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .grid {
+    padding: 10px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* حركة الظهور السلسة */
+@keyframes fadeInSlide {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(15px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+/* الثيم الغامق العام لكل المشروع بدون استثناء */
+body {
+  background-color: #121212 !important;
+  color: #f1f1f1 !important;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* إلغاء أي خلفيات زرقاء قديمة وتوحيد لون صندوق الدخول */
+.login-wrapper,
+.login-box {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border: 1px solid #333 !important;
+}
+
+/* تنسيق النصوص والعناوين في كل مكان */
+h1, h2, h3, h4, p, span, label {
+  color: #ffffff !important;
+}
+
+/* النافبار */
+.navbar {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #333 !important;
+}
+.navbar a {
+  color: #38bdf8 !important;
+  text-decoration: none;
+}
+
+/* بطاقات الكورس واللوحة */
+.hero,
+.card,
+.details-container,
+.form-box,
+.dashboard {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: #333 !important;
+}
+
+/* حقول الإدخال (Inputs) - غامقة مع كتابة بيضاء واضحة */
+input, select, textarea {
+  background-color: #262626 !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+  padding: 10px;
+  border-radius: 6px;
+}
+input::placeholder {
+  color: #9ca3af !important;
+}
+
+/* الجداول في لوحة التحكم */
+table {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background-color: #262626 !important;
+  color: #ffffff !important;
+  padding: 10px;
+}
+td {
+  background-color: #1a1a1a !important;
+  color: #e5e7eb !important;
+  border-bottom: 1px solid #333 !important;
+  padding: 10px;
+}
+
+/* الأزرار (بما فيها زر Login) */
+button {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+/* زر الحذف */
+.delete-btn {
+  background-color: #dc2626 !important;
+}
+
+/* زر التعديل */
+.update-btn {
+  background-color: #ca8a04 !important;
+}
+/* ضبط هيكل الصفحة بالكامل لضمان بقاء الفوتر في الأسفل */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
