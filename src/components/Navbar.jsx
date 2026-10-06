@@ -1,9 +1,7 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 export default function Navbar() {
-  const nav = useNavigate();
-
   const storedUser = localStorage.getItem('user');
   const user = storedUser ? JSON.parse(storedUser) : null;
   const isAdmin = user && user.email === 'admin@skill.com';
