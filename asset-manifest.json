@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/skill-family/static/css/main.2a5a3386.css",
+    "main.js": "/skill-family/static/js/main.b56e4f6a.js",
+    "index.html": "/skill-family/index.html",
+    "main.2a5a3386.css.map": "/skill-family/static/css/main.2a5a3386.css.map",
+    "main.b56e4f6a.js.map": "/skill-family/static/js/main.b56e4f6a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a5a3386.css",
+    "static/js/main.b56e4f6a.js"
+  ]
+}
